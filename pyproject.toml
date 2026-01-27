@@ -32,18 +32,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest", "flake8", "black", "jupyter"]
+dev = ["pytest", "flake8", "black", "jupyter", "pre-commit"]
 
 [tool.black]
 line-length = 88
 target-version = ['py311']
-
-[tool.flake8]
-max-line-length = 88
-extend-ignore = ["E203", "W503"]
-[tool.black]
-line-length = 88
-target-version = ['py311']
+include = '\.pyi?$'
 extend-exclude = '''
 /(
     \.git
@@ -56,5 +50,73 @@ extend-exclude = '''
     | build
     | dist
     | \.dvc
+    | \.mlflow
 )/
 '''
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    "*.egg-info",
+    ".venv",
+    "venv",
+    ".dvc",
+    ".mlflow",
+    "mlruns"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short --cov=src --cov-report=xml --cov-report=html"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/tests/*",
+    "*/__pycache__/*",
+    "*/migrations/*",
+    "*/admin.py",
+    "*/apps.py",
+    "*/models.py"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod"
+]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+exclude = [
+    "build/",
+    "dist/",
+    ".git/",
+    "__pycache__/",
+    ".venv/",
+    "venv/",
+    ".dvc/",
+    ".mlflow/",
+    "mlruns/"
+]
