@@ -1,0 +1,10 @@
+Validation Summary: train
+Timestamp: 2026-01-28T01:06:37.954013
+Data Shape: (24000, 35)
+Total Checks: 28
+Passed: 27
+Failed: 1
+Status: FAIL
+
+Failed Checks:
+  - bill_amt1: Column 'bill_amt1': 468 values out of range

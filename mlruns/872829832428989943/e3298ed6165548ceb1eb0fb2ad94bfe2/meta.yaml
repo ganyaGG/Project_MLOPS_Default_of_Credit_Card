@@ -1,0 +1,15 @@
+artifact_uri: file:///C:\Users\user\Desktop\Project_MLOPS_Default_of_Credit_Card\mlruns/872829832428989943/e3298ed6165548ceb1eb0fb2ad94bfe2/artifacts
+end_time: 1769551788404
+entry_point_name: ''
+experiment_id: '872829832428989943'
+lifecycle_stage: active
+run_id: e3298ed6165548ceb1eb0fb2ad94bfe2
+run_name: GradientBoosting_experiment
+run_uuid: e3298ed6165548ceb1eb0fb2ad94bfe2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769551787347
+status: 4
+tags: []
+user_id: user

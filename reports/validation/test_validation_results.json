@@ -1,0 +1,213 @@
+{
+  "data_file": "data/processed/test.csv",
+  "timestamp": "2026-01-28T01:06:37.987514",
+  "data_shape": [
+    6000,
+    35
+  ],
+  "column_count": 35,
+  "validations": [
+    {
+      "check_type": "column_exists",
+      "column": "limit_bal",
+      "passed": true,
+      "message": "Column 'limit_bal' exists",
+      "timestamp": "2026-01-28T01:06:37.988014"
+    },
+    {
+      "check_type": "column_exists",
+      "column": "sex",
+      "passed": true,
+      "message": "Column 'sex' exists",
+      "timestamp": "2026-01-28T01:06:37.988014"
+    },
+    {
+      "check_type": "column_exists",
+      "column": "education",
+      "passed": true,
+      "message": "Column 'education' exists",
+      "timestamp": "2026-01-28T01:06:37.988014"
+    },
+    {
+      "check_type": "column_exists",
+      "column": "marriage",
+      "passed": true,
+      "message": "Column 'marriage' exists",
+      "timestamp": "2026-01-28T01:06:37.988014"
+    },
+    {
+      "check_type": "column_exists",
+      "column": "age",
+      "passed": true,
+      "message": "Column 'age' exists",
+      "timestamp": "2026-01-28T01:06:37.988014"
+    },
+    {
+      "check_type": "column_exists",
+      "column": "default_payment_next_month",
+      "passed": true,
+      "message": "Column 'default_payment_next_month' exists",
+      "timestamp": "2026-01-28T01:06:37.988014"
+    },
+    {
+      "check_type": "not_null",
+      "column": "limit_bal",
+      "passed": true,
+      "message": "Column 'limit_bal': No null values",
+      "timestamp": "2026-01-28T01:06:37.988513"
+    },
+    {
+      "check_type": "not_null",
+      "column": "sex",
+      "passed": true,
+      "message": "Column 'sex': No null values",
+      "timestamp": "2026-01-28T01:06:37.989013"
+    },
+    {
+      "check_type": "not_null",
+      "column": "education",
+      "passed": true,
+      "message": "Column 'education': No null values",
+      "timestamp": "2026-01-28T01:06:37.989013"
+    },
+    {
+      "check_type": "not_null",
+      "column": "marriage",
+      "passed": true,
+      "message": "Column 'marriage': No null values",
+      "timestamp": "2026-01-28T01:06:37.989013"
+    },
+    {
+      "check_type": "not_null",
+      "column": "age",
+      "passed": true,
+      "message": "Column 'age': No null values",
+      "timestamp": "2026-01-28T01:06:37.989013"
+    },
+    {
+      "check_type": "not_null",
+      "column": "default_payment_next_month",
+      "passed": true,
+      "message": "Column 'default_payment_next_month': No null values",
+      "timestamp": "2026-01-28T01:06:37.989512"
+    },
+    {
+      "check_type": "numeric_range",
+      "column": "limit_bal",
+      "passed": true,
+      "message": "Column 'limit_bal': All values in range [0, 1000000]",
+      "timestamp": "2026-01-28T01:06:37.990015"
+    },
+    {
+      "check_type": "numeric_range",
+      "column": "age",
+      "passed": true,
+      "message": "Column 'age': All values in range [18, 100]",
+      "timestamp": "2026-01-28T01:06:37.990513"
+    },
+    {
+      "check_type": "numeric_range",
+      "column": "bill_amt1",
+      "passed": false,
+      "message": "Column 'bill_amt1': 122 values out of range",
+      "timestamp": "2026-01-28T01:06:37.991012"
+    },
+    {
+      "check_type": "numeric_range",
+      "column": "pay_amt1",
+      "passed": true,
+      "message": "Column 'pay_amt1': All values in range [0, 1000000]",
+      "timestamp": "2026-01-28T01:06:37.991012"
+    },
+    {
+      "check_type": "categorical",
+      "column": "sex",
+      "passed": true,
+      "message": "Column 'sex': All values in allowed set [1, 2]",
+      "timestamp": "2026-01-28T01:06:37.991512"
+    },
+    {
+      "check_type": "categorical",
+      "column": "education",
+      "passed": true,
+      "message": "Column 'education': All values in allowed set [1, 2, 3, 4]",
+      "timestamp": "2026-01-28T01:06:37.992013"
+    },
+    {
+      "check_type": "categorical",
+      "column": "marriage",
+      "passed": true,
+      "message": "Column 'marriage': All values in allowed set [1, 2, 3]",
+      "timestamp": "2026-01-28T01:06:37.992515"
+    },
+    {
+      "check_type": "categorical",
+      "column": "default_payment_next_month",
+      "passed": true,
+      "message": "Column 'default_payment_next_month': All values in allowed set [0, 1]",
+      "timestamp": "2026-01-28T01:06:37.992515"
+    },
+    {
+      "check_type": "payment_status",
+      "column": "pay_0",
+      "passed": true,
+      "message": "Column 'pay_0': All values in range [-2, 8]",
+      "timestamp": "2026-01-28T01:06:37.993012"
+    },
+    {
+      "check_type": "payment_status",
+      "column": "pay_2",
+      "passed": true,
+      "message": "Column 'pay_2': All values in range [-2, 8]",
+      "timestamp": "2026-01-28T01:06:37.993512"
+    },
+    {
+      "check_type": "payment_status",
+      "column": "pay_3",
+      "passed": true,
+      "message": "Column 'pay_3': All values in range [-2, 8]",
+      "timestamp": "2026-01-28T01:06:37.993512"
+    },
+    {
+      "check_type": "payment_status",
+      "column": "pay_4",
+      "passed": true,
+      "message": "Column 'pay_4': All values in range [-2, 8]",
+      "timestamp": "2026-01-28T01:06:37.994012"
+    },
+    {
+      "check_type": "payment_status",
+      "column": "pay_5",
+      "passed": true,
+      "message": "Column 'pay_5': All values in range [-2, 8]",
+      "timestamp": "2026-01-28T01:06:37.994012"
+    },
+    {
+      "check_type": "payment_status",
+      "column": "pay_6",
+      "passed": true,
+      "message": "Column 'pay_6': All values in range [-2, 8]",
+      "timestamp": "2026-01-28T01:06:37.994513"
+    },
+    {
+      "check_type": "infinite_values",
+      "column": "all_numeric",
+      "passed": true,
+      "message": "No infinite values found in numeric columns",
+      "timestamp": "2026-01-28T01:06:37.999011"
+    },
+    {
+      "check_type": "target_distribution",
+      "column": "default_payment_next_month",
+      "passed": true,
+      "message": "Target distribution: 0=77.9%, 1=22.1%",
+      "timestamp": "2026-01-28T01:06:37.999513"
+    }
+  ],
+  "summary": {
+    "total_checks": 28,
+    "passed_checks": 27,
+    "failed_checks": 1,
+    "all_passed": false
+  }
+}

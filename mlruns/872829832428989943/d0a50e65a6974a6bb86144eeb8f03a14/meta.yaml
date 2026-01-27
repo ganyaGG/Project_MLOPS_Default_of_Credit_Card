@@ -1,0 +1,15 @@
+artifact_uri: file:///C:\Users\user\Desktop\Project_MLOPS_Default_of_Credit_Card\mlruns/872829832428989943/d0a50e65a6974a6bb86144eeb8f03a14/artifacts
+end_time: 1769551786270
+entry_point_name: ''
+experiment_id: '872829832428989943'
+lifecycle_stage: active
+run_id: d0a50e65a6974a6bb86144eeb8f03a14
+run_name: LogisticRegression_experiment
+run_uuid: d0a50e65a6974a6bb86144eeb8f03a14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769551784850
+status: 4
+tags: []
+user_id: user
