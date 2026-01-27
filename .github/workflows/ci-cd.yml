@@ -34,7 +34,7 @@ jobs:
     
     - name: Format check with black
       run: |
-        black --check src/
+        black --check src/ --extend-exclude '.*\.(pyc|pyo|pyd|so)$|.*/__pycache__/.*'
     
     - name: Test with pytest
       run: |
