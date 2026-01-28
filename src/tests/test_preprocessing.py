@@ -1,6 +1,7 @@
 import sys
 import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 try:
     from src.data.make_dataset import clean_data
@@ -10,6 +11,7 @@ except ImportError:
 import pandas as pd
 import numpy as np
 import pytest
+
 
 def test_clean_data():
     """Test data cleaning function"""

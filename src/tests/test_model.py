@@ -1,6 +1,7 @@
 import sys
 import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 
 try:
@@ -11,6 +12,7 @@ except ImportError:
 import pytest
 import numpy as np
 import pandas as pd
+
 
 def test_pipeline_creation():
     """Test pipeline creation"""
