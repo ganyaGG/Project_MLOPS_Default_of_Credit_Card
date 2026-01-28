@@ -1,8 +1,15 @@
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+try:
+    from src.data.make_dataset import clean_data
+except ImportError:
+    from data.make_dataset import clean_data
+
 import pandas as pd
 import numpy as np
 import pytest
-from src.data.make_dataset import clean_data
-
 
 def test_clean_data():
     """Test data cleaning function"""

@@ -1,9 +1,16 @@
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+
+try:
+    from src.models.pipeline import create_model_pipeline, get_default_features
+except ImportError:
+    from models.pipeline import create_model_pipeline, get_default_features
+
 import pytest
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from src.models.pipeline import create_model_pipeline, get_default_features
-
 
 def test_pipeline_creation():
     """Test pipeline creation"""
