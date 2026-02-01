@@ -1,0 +1,21 @@
+{
+  "dashboard": {
+    "title": "Credit Scoring API - Production",
+    "panels": [
+      {
+        "title": "API Response Time (95th percentile)",
+        "targets": [{
+          "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{app=\"credit-scoring\"}[5m])) by (le))",
+          "legendFormat": "95th percentile"
+        }]
+      },
+      {
+        "title": "Requests per Second",
+        "targets": [{
+          "expr": "sum(rate(http_requests_total[5m]))",
+          "legendFormat": "RPS"
+        }]
+      }
+    ]
+  }
+}
